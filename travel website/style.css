@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#background {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /*Equal space */
+    padding: 10px 15px;
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;  /* to remove dots*/
+    width: 100%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;   
+}
+
+.btn {
+    display: flex;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 25px;
+    background-color: darkorchid;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.flight {
+    margin-right: 20px;
+}
+
+.book{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.text {
+    font-size: 50px;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.quotes {
+    font-size: 20px;
+    font-weight: 1000;
+    padding-left: 50px;
+    color: aliceblue;
+}
+
+#search-engine{
+    margin: 20px 100px;
+}
+.search-box{
+    height: 5vh;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.search {
+    padding: 15px 40px;
+    background-color: darkorchid;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
