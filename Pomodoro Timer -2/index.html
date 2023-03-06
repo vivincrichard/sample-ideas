@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); </style>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="background">
+      <h1 id="PomodoroTimer">Pomodoro Timer</h1>
+        <div id="title">
+            <p class="work">Work:</p>
+            <p class="break">Cycle:</p>
+            <p class="cycles">Break:</p>
+        </div>
+    
+        <div id="numbers">
+            <div id="onlyWork" class="oneLine">
+               <p id="work_mins">25</p>
+               <p id="work_semicolon">:</p>
+               <p id="work_second">00</p>
+            </div>
+
+            <div id="onlyCycle" class="oneLine">
+                <p id="counter" class="cycle">0</p>
+            </div>
+            
+            <div id="onlyBreak" class="oneLine">
+                <p id="break_mins">5</p>
+                <p id="break_semicolon">:</p>
+                <p id="break_second">00</p>
+            </div>
+        </div>
+    
+        <div id="button">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+            <button id="pause">Pause</button>
+    
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#background {
+    width: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+#PomodoroTimer {
+    font-size: 60px;
+    font-weight: lighter;
+    color: brown;
+    padding: 30px;
+    background-color: rgb(29, 240, 159);
+    font-family: 'Secular One', sans-serif;
+
+}
+
+#title p {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(13, 129, 202);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#title {
+    padding: 10px;
+}
+
+#onlyWork p{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#onlyCycle p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#onlyBreak p{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.oneLine {
+    display: inline-block;
+}
+
+#onlyWork {
+    padding: 30px;
+}
+
+#onlyCycle {
+    padding: 30px;
+}
+
+#onlyBreak {
+    padding: 30px;
+}
+
+#start {
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+#pause {
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+#reset {
+    font-size: 20px;
+    padding: 0px 20px;
+}
