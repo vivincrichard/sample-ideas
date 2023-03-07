@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bold {
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-link {
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    color: blue;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid blue;
+    transition: .1s;
+    
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center  */
+}
+
+section span {
+    color: rgb(6, 6, 108);
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+}
+
+h6 {
+    color: rgb(112, 42, 165);
+    font-size: 50px;
+}
+
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+/* service */
+
+
+.card img {
+    height: 300px;
+    transition: 1.5s;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.card img:hover {
+    transform: scale(1,1.5);
+    transition: 2s;
+}
+
+
+
+/* contact */
+
+
+form{
+    padding: 40px;
+    box-shadow: 2px 2px 5px rgb(230, 6, 6),
+            -1px -1px 5px rgb(83, 3, 255);
+    border-radius: 10px;
+}
