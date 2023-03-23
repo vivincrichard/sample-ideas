@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic page</title>
+    
+</head>
+<body>
+
+    <section id="background">
+
+        <nav>
+            <div class="left">
+                <img src="Radiance_img/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="right">
+                <button>Explore</button>
+                <img src="Radiance_img/user.png" alt="user" class="user">
+            </div>
+            
+        </nav>
+
+        
+
+        <div class="blur-container">
+
+             <div class="info">
+                <h1>DISCOVER</h1>
+                <P>Loreme eos accusamus magnam optio, voluptate iusto, aliquam itaque <br>te iusto, aliquam itaque beat beatae. Quis.</P>
+                <input type="text" name="text" placeholder="Search">
+              </div>  
+          
+        </div>
+
+
+
+        <div class="slider">
+            <img src="Radiance_img/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="Radiance_img/small1.png" class="active thumbnail">
+                <img src="Radiance_img/small2.png" class="thumbnail">
+                <img src="Radiance_img/small3.png" class="thumbnail">
+                <img src="Radiance_img/small4.png" class="thumbnail">
+                <img src="Radiance_img/small5.png" class="thumbnail">
+            </div>
+            <img src="Radiance_img/right-arrow.png" id="next">
+        </div>
+
+
+
+
+
+            
+    <script>
+
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var background = document.getElementById("background");
+
+        var backgroundImg = new Array(
+            "Radiance_img/bg1.png",
+            "Radiance_img/bg2.png",
+            "Radiance_img/bg3.png",
+            "Radiance_img/bg4.png",
+            "Radiance_img/bg5.png",
+        );
+
+        var i=0;
+        next.onclick = function(){
+
+            if(i < 4){
+                background.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+                thumbnail[i+1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+        }
+
+
+        prev.onclick = function(){
+
+            if(i > 0){
+                background.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                thumbnail[i-1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }
+        }
+
+
+
+    </script>
+
+
+
+    </section>
+    
+    
+</body>
+</html>
